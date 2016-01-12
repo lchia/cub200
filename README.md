@@ -4,13 +4,13 @@
 1. Requirments 
 ----------------
 matconvnet: <br>
-	git clone https://github.com/vlfeat/matconvnet
+	git clone https://github.com/vlfeat/matconvnet <br>
   compile: >matlab <br>
-	>>cd ./matconvnet/matlab
-	>>vl_compilenn('enableGpu', true)
+	>>cd ./matconvnet/matlab <br>
+	>>vl_compilenn('enableGpu', true) <br>
 vlfeat: <br>
-	git clone https://github.com/vlfeat/vlfeat
+	git clone https://github.com/vlfeat/vlfeat <br>
   compile: >matlab <br>
-	>>cd ./vlfeat/toolbox/
-	>>vl_setup
+	>>cd ./vlfeat/toolbox/ <br>
+	>>vl_setup <br>
 
