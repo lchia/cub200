@@ -1,13 +1,16 @@
 # cub200
-1. Requirments
-matconvnet:
+===================
+
+1. Requirments \<br>
+----------------
+matconvnet: \<br>
 	git clone https://github.com/vlfeat/matconvnet
-  compile: >matlab
-	>>cd ./matconvnet/matlab/
+  compile: >matlab \<br>
+	>>cd ./matconvnet/matlab
 	>>vl_compilenn('enableGpu', true)
-vlfeat:
+vlfeat: \<br>
 	git clone https://github.com/vlfeat/vlfeat
-  compile: >matlab
+  compile: >matlab \<br>
 	>>cd ./vlfeat/toolbox/
 	>>vl_setup
 
