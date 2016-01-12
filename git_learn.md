@@ -178,6 +178,31 @@ Git-learn
 	2） Git diff - - cached 
 	比较index和本地仓库中的代码。 
 
+>>. 推送改动
+将本地commit的代码更新到远程版本库中，例如 “git push origin”就会将本地的代码更新到名为orgin的远程版本库中。 
+       git push和git pull正好想反，是将本地某个分支的内容提交到远端某个分支上。用法： git pushusername@ipaddr:远端repository名本地分支名 远端分支名。这条命令将本地git库的一个本地分支push到远端git库的远端分支名中。 
+需要格外注意的是，git push好像不会自动合并文件。因此，如果git push时，发生了冲突，就会被后push的文件内容强行覆盖，而且没有什么提示。 这在合作开发时是很危险的事情。 
+	
+	你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库：
+	git push origin master
+	可以把 master 换成你想要推送的任何分支。
+	     $ git push orgin master 
+		Username for 'https://github.com': lchia
+		Password for 'https://lchia@github.com': 
+		Counting objects: 4, done.
+		Delta compression using up to 8 threads.
+		Compressing objects: 100% (3/3), done.
+		Writing objects: 100% (3/3), 3.19 KiB | 0 bytes/s, done.
+		Total 3 (delta 1), reused 0 (delta 0)
+		To https://github.com/lchia/cub200
+		   e0759bd..14919cd  master -> master
+
+
+	如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加：
+	git remote add origin <server>
+	如此你就能够将你的改动推送到所添加的服务器上去了。
+ 
+
 11. 查看当前的git库中有那些文件。 
     $ git ls-files
 
@@ -285,29 +310,6 @@ git pull username@ipaddr:远端repository名远端分支名 本地分支名。�
 	在合并改动之前，你可以使用如下命令预览差异：
 	$ git diff <source_branch> <target_branch>
 
->>. 推送改动
-将本地commit的代码更新到远程版本库中，例如 “git push origin”就会将本地的代码更新到名为orgin的远程版本库中。 
-       git push和git pull正好想反，是将本地某个分支的内容提交到远端某个分支上。用法： git pushusername@ipaddr:远端repository名本地分支名 远端分支名。这条命令将本地git库的一个本地分支push到远端git库的远端分支名中。 
-需要格外注意的是，git push好像不会自动合并文件。因此，如果git push时，发生了冲突，就会被后push的文件内容强行覆盖，而且没有什么提示。 这在合作开发时是很危险的事情。 
-	
-	你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库：
-	git push origin master
-	可以把 master 换成你想要推送的任何分支。
-	     $ git push orgin master 
-		Username for 'https://github.com': lchia
-		Password for 'https://lchia@github.com': 
-		Counting objects: 4, done.
-		Delta compression using up to 8 threads.
-		Compressing objects: 100% (3/3), done.
-		Writing objects: 100% (3/3), 3.19 KiB | 0 bytes/s, done.
-		Total 3 (delta 1), reused 0 (delta 0)
-		To https://github.com/lchia/cub200
-		   e0759bd..14919cd  master -> master
-
-
-	如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加：
-	git remote add origin <server>
-	如此你就能够将你的改动推送到所添加的服务器上去了。
 
 >>. Git fetch 
 从服务器的仓库中下载代码。（与服务器交互，从服务器上下载最新代码） 
