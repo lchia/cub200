@@ -20,7 +20,7 @@ github README.md
 
 5. 文字超链接
 -------------------
-给一段文字加入超链接的格式是这样的 [ 要显示的文字 ]( 链接的地址 )。比如：	
+给一段文字加入超链接的格式是这样的 `[ 要显示的文字 ]( 链接的地址 )`。比如：	
 	\[我的博客](http://blog.csdn.net/guodongxiaren)  
 [我的博客](http://blog.csdn.net/guodongxiaren)  
 
@@ -40,7 +40,7 @@ github README.md
 8. insert来源于网络的图片
 -------------------
 	`![](http://www.baidu.com/img/bdlogo.gif)`
-鼠标悬停显示提示信息，那么可以仿照前面介绍的文本中的方法，就是这样：
+鼠标悬停显示提示信息，那么可以仿照前面介绍的文本中的方法，就是这样： <br>
     	`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")` 
 
 ![](http://www.baidu.com/img/bdlogo.gif) 
@@ -54,7 +54,7 @@ github README.md
 
 10. 给图片加上超链接
 -------------------
-如果你想使图片带有超链接的功能，即点击一个图片进入一个指定的网页。
+如果你想使图片带有超链接的功能，即点击一个图片进入一个指定的网页。 <br>
 	`[![baidu]](http://baidu.com)`
 	`[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"`
 [![baidu]](http://baidu.com)  
