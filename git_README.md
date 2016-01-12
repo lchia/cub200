@@ -39,22 +39,23 @@ github README.md
 
 8. insert来源于网络的图片
 -------------------
-	\![](http://www.baidu.com/img/bdlogo.gif) 
+	`![](http://www.baidu.com/img/bdlogo.gif)`
 鼠标悬停显示提示信息，那么可以仿照前面介绍的文本中的方法，就是这样：
-    	\![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo") 
+    	`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")` 
+
 ![](http://www.baidu.com/img/bdlogo.gif) 
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo") 
 
 9. insert GitHub仓库里的图片
 -------------------
 	与上面的格式基本一致的，所不同的就是括号里的URL该怎么写。
-	\![](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif) 
+	`![](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif)` 
 ![](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif) 
 
 10. 给图片加上超链接
 -------------------
 如果你想使图片带有超链接的功能，即点击一个图片进入一个指定的网页。
-	\[![baidu]](http://baidu.com)  
-	\[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"
+	`[![baidu]](http://baidu.com)`
+	`[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"`
 [![baidu]](http://baidu.com)  
 [baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"
